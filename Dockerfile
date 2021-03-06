@@ -8,7 +8,6 @@ FROM trestletech/plumber
 # copy model and scoring script
 RUN mkdir /workdir
 COPY api.R /workdir
-WORKDIR /data
 
 # plumb and run server
 EXPOSE 8080
